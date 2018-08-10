@@ -1,0 +1,27 @@
+{
+  "name": "friendFinder",
+  "version": "1.0.0",
+  "description": "A quick survey to help you find like-minded people.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoriaashling/friendFinder.git"
+  },
+  "keywords": [],
+  "author": "Victoria Anderson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoriaashling/friendFinder/issues"
+  },
+  "homepage": "https://github.com/victoriaashling/friendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
