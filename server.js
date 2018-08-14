@@ -11,25 +11,27 @@ app.use(bodyParser.json());
 let users = [
     {
         userName: "Olga",
-        userPhotoURL: "pics/olga-pic.jpg",
+        userPhotoURL: "/pics/olga-pic.jpg",
         scores: [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
     },
     {
         userName: "Albert",
-        userPhotoURL: "pics/albert-pic.jpg",
+        userPhotoURL: "/pics/albert-pic.jpg",
         scores: [2, 2, 3, 4, 4, 4, 2, 3, 3, 2]
     },
     {
         userName: "Emilia",
-        userPhotoURL: "pics/emilia-pic.jpg",
+        userPhotoURL: "/pics/emilia-pic.jpg",
         scores: [1, 1, 2, 1, 3, 1, 2, 3, 2, 5]
     },
     {
         userName: "Hugo",
-        userPhotoURL: "pics/olga-pic.jpg",
+        userPhotoURL: "/pics/olga-pic.jpg",
         scores: [4, 1, 3, 4, 1, 3, 2, 5, 5, 5]
     }
 ]
+
+app.use(express.static(path.join(__dirname, 'app/public')));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "app/public/home.html"));
